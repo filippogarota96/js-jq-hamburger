@@ -1,15 +1,16 @@
-var menu = $(".fa-bars");
+var menu = $(".header-right > a");
 var list = $(".hamburger-menu");
 var closeMenu = $(".close");
 // apre il menu
 menu.click(
   function(){
-    list.fadeIn('slow');
+    list.addClass('active');
+
   }
 );
 // chiude il menu
 closeMenu.click(
   function(){
-    list.fadeOut('slow');
+    list.removeClass('active');
   }
 );
